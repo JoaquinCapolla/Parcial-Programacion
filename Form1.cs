@@ -64,7 +64,7 @@ namespace Parcial_Programacion
                 Temperatura temperaturaTemp = new Temperatura();
 
                 temperaturaTemp.Numero = Convert.ToInt32(reader1.ReadLine());
-                temperaturaTemp.Temp = float.Parse(reader1.ReadLine());
+                temperaturaTemp.Temp = Convert.ToInt32(reader1.ReadLine());
                 temperaturaTemp.Fecha = Convert.ToDateTime(reader1.ReadLine());
                 temperatura.Add(temperaturaTemp);
             }
