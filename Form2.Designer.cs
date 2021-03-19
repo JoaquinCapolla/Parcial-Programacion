@@ -54,6 +54,7 @@ namespace Parcial_Programacion
             this.cmb_orden.Name = "cmb_orden";
             this.cmb_orden.Size = new System.Drawing.Size(121, 21);
             this.cmb_orden.TabIndex = 1;
+            this.cmb_orden.SelectedIndexChanged += new System.EventHandler(this.cmb_orden_SelectedIndexChanged);
             // 
             // label1
             // 

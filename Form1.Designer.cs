@@ -31,12 +31,13 @@ namespace Parcial_Programacion
         {
             this.label1 = new System.Windows.Forms.Label();
             this.cmb_departamentos = new System.Windows.Forms.ComboBox();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.mnt_fecha = new System.Windows.Forms.MonthCalendar();
             this.txt_temperatura = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_almacenar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.btn_mostrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -56,11 +57,11 @@ namespace Parcial_Programacion
             this.cmb_departamentos.Size = new System.Drawing.Size(121, 21);
             this.cmb_departamentos.TabIndex = 1;
             // 
-            // monthCalendar1
+            // mnt_fecha
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(87, 97);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 2;
+            this.mnt_fecha.Location = new System.Drawing.Point(87, 97);
+            this.mnt_fecha.Name = "mnt_fecha";
+            this.mnt_fecha.TabIndex = 2;
             // 
             // txt_temperatura
             // 
@@ -106,17 +107,28 @@ namespace Parcial_Programacion
             this.label4.TabIndex = 7;
             this.label4.Text = "c*";
             // 
+            // btn_mostrar
+            // 
+            this.btn_mostrar.Location = new System.Drawing.Point(122, 319);
+            this.btn_mostrar.Name = "btn_mostrar";
+            this.btn_mostrar.Size = new System.Drawing.Size(122, 23);
+            this.btn_mostrar.TabIndex = 8;
+            this.btn_mostrar.Text = "Mostrar Datos";
+            this.btn_mostrar.UseVisualStyleBackColor = true;
+            this.btn_mostrar.Click += new System.EventHandler(this.btn_mostrar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(347, 354);
+            this.Controls.Add(this.btn_mostrar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_almacenar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_temperatura);
-            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.mnt_fecha);
             this.Controls.Add(this.cmb_departamentos);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -130,12 +142,13 @@ namespace Parcial_Programacion
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmb_departamentos;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.MonthCalendar mnt_fecha;
         private System.Windows.Forms.TextBox txt_temperatura;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_almacenar;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btn_mostrar;
     }
 }
 
